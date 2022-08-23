@@ -1,6 +1,8 @@
 const Header = () => {
   return (
-    <div>Header</div>
+    <header>
+      Challange Your Memory
+    </header>
   )
 }
 

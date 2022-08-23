@@ -1,0 +1,60 @@
+:root{
+  --font-size-larger: 2em;
+  --font-size-medium: 1.3em;
+  --font-size-small: 1.1em;
+  --font-size-smaller: 0.9em;
+
+  --font-family:  'Open Sans', sans-serif;
+  --color-one: #18181b;
+  --color-two: #27272a;
+  --color-three: #3f3f46;
+  --color-four: #52525b;
+  --color-five: #71717a;
+  --color-six: #a1a1aa;
+  --color-seven: #d4d4d8;
+  --color-eight: #e4e4e7;
+  --color-nine: #f4f4f5;
+  --color-ten: #fafafa;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-nine);
+  font-family: var(--font-family);
+}
+
+
+header{
+  font-size: var(--font-size-larger);
+  font-family: var(--font-family);
+  text-align: center;
+  background-color: var(--color-one);
+  color: #f8fafc;
+  padding: 20px;
+}
+
+footer{
+  position: absolute;
+  width: 100%;
+  font-size: var(--font-size-small);
+  font-family: var(--font-family);
+  text-align: center;
+  background-color: var(--color-three);
+  color: #f8fafc;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2em;
+  margin: 40px;
+  justify-content: center;
+}
+
+button{
+  border: none;
+}

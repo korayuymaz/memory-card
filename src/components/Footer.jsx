@@ -1,6 +1,8 @@
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      Copyright &copy; Koray Uymaz
+    </footer>
   )
 }
 
