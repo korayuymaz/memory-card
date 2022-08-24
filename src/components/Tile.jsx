@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Tile = () => {
+const Tile = ({src, id}) => {
   return (
-    <button>
-      <img src="" alt="tile.png" className="tile" />
+    <button id={id}>
+      <img src={src} alt="tile.png" className="tile" />
     </button>
   )
 }

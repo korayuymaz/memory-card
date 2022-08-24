@@ -50,11 +50,23 @@ main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 2em;
-  margin: 40px;
+  margin: 20px;
   justify-content: center;
 }
 
 button{
   border: none;
+  background-color: var(--color-nine);
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color: var(--color-six);
+  border-radius: 5px;
+}
+
+img{
+  height: 80px;
+  width: auto;
+  border-radius: 12px;
 }
