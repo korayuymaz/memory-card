@@ -47,26 +47,45 @@ footer{
 }
 
 main{
+  margin: 20px;
+}
+
+.tiles{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.scores{
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.score{
+  display: inline;
+  background-color: var(--color-six);
+  color: var(--color-nine);
+  padding: 10px;
+  border-radius: 10px;
   margin: 20px;
-  justify-content: center;
 }
 
 button{
   border: none;
   background-color: var(--color-nine);
   border-radius: 5px;
-}
-
-button:hover{
-  background-color: var(--color-six);
-  border-radius: 5px;
+  width: fit-content;
 }
 
 img{
   height: 80px;
   width: auto;
   border-radius: 12px;
+}
+
+img:hover{
+  opacity: 0.5;
 }

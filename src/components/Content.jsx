@@ -18,11 +18,39 @@ const Content = () => {
       ])
     }}, [])
   
+  const handleClick = (e) => {
+    let clickedTile = e.target.alt
+    console.log(clickedTile, "This one is clicked")
+    if(clicked.includes(clickedTile)){
+      setScore(0)
+      setClicked([])
+    }
+    else{
+      setClicked((clicked) => [
+        ...clicked,
+        e.target.alt
+      ])
+      setScore(score + 1)
+      if(score === bestScore){
+        setBestScore(bestScore + 1)
+      }
+    }
+
+    let newList = items.sort(() => Math.random() - 0.5);
+    setItems(newList)
+  }    
+
   return (
     <main>
-      {items.map((item) => (
-        <Tile src={item[0].src} id={item[0].id}/>
-      ))}
+      <div className="tiles">
+        {items.map((item) => (
+          <Tile key={item[0].id} src={item[0].src} id={item[0].id} handleClick={handleClick}/>
+        ))}
+      </div>
+      <div className="scores">
+          <div className="score">Best Score: {bestScore}</div>
+          <div className="score">Current Score: {score}</div> 
+      </div>
     </main>
   )
 }
